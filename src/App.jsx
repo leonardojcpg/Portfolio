@@ -1,11 +1,11 @@
-import { Header } from "./components/header"
 import "./globalStyle.css"
+import {Home} from './pages/home'
 
 function App() {
 
   return (
     <>
-    <Header/>
+    <Home/>
     </>
   )
 }

@@ -11,7 +11,7 @@ export const Header = () => {
     return (
         <HeaderContainer>
             <TitleContainer>
-                <Title>Leonardo Gomes</Title>
+                <Title>Full Stack Developer</Title>
             </TitleContainer>
             <NavContainer>
                 <NavLinks>
