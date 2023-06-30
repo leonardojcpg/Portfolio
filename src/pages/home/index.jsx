@@ -1,17 +1,13 @@
-import { Header } from '../../components/header/index.jsx'
-import './style.js'
-import bgImg from '../../assets/bgImg.jpg'
+import { Header } from "../../components/header/index.jsx";
+import { HomeContainer } from "./style.js";
 
 export const Home = () => {
-    return (
-        <div className="container-home">
-            <Header/>
-            <div className="background-img">
-                <img src={bgImg} alt="" />
-            </div>
-            <div className="home-body">
-                <span>Leonardo Gomes</span>
-            </div>
-        </div>
-    )
-}
+  return (
+    <HomeContainer>
+      <Header />
+      <div className="home-body">
+        <span>Leonardo Gomes</span>
+      </div>
+    </HomeContainer>
+  );
+};
