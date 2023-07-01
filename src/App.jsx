@@ -1,6 +1,6 @@
 import "./styles/themes/globalStyle.css"
-import {Home} from './pages/home'
 import { ThemeProvider } from 'styled-components';
+import { RouteApp } from "./routes/index.jsx";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Home/>
+      <RouteApp/>
     </ThemeProvider>
   )
 }
