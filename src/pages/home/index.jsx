@@ -1,13 +1,16 @@
 import { Header } from "../../components/header/index.jsx";
-import { HomeContainer } from "./style.js";
+import { 
+  HomeContainer,
+  HomeTitle,
+  HomeSubTitle
+} from "./style.js";
 
 export const Home = () => {
   return (
     <HomeContainer>
       <Header />
-      <div className="home-body">
-        <span>Leonardo Gomes</span>
-      </div>
+      <HomeTitle>Leonardo Gomes</HomeTitle>
+      <HomeSubTitle>Full Stack Developer</HomeSubTitle>
     </HomeContainer>
   );
 };
