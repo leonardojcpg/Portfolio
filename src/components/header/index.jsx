@@ -6,6 +6,18 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <NavLinks>
+      <Button
+          sx={{
+            color: "#141414",
+            "&:hover": {
+              backgroundColor: "#dfdeda",
+              borderColor: "#5d740c",
+              color: "#5d740c",
+            },
+          }}
+        >
+          Home
+        </Button>
         <Button
           sx={{
             color: "#141414",
