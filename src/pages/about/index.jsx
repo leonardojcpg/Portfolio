@@ -1,15 +1,28 @@
 import { Header } from "../../components/header"
-import {AboutContainer, ContainerContent} from './styles.js'
+import {
+    AboutContainer, 
+    ContainerContent,
+    PhotoProfile, 
+    AboutText, 
+    AboutTextH1, 
+    AboutTextH3, 
+    Image
+} from './styles.js'
 
-export const About = () => {
+export const About = (props) => {
     return (
         <AboutContainer>
         <Header />
         <ContainerContent>
-            <div className="photoProfile">
-                <img src="https://github.com/leonardojcpg" alt="" />
-            </div>
-            <div className="aboutText"></div>
+            <PhotoProfile>
+                <Image src="https://github.com/leonardojcpg.png" alt="" />
+            </PhotoProfile>
+            <AboutText>
+                <AboutTextH1>{props.aboutTextH1}</AboutTextH1>
+                <AboutTextH3>{props.aboutTextH3}</AboutTextH3>
+                <p>{props.pText1}</p><br></br>
+                <p>{props.pText2}</p>
+            </AboutText>
         </ContainerContent>
         </AboutContainer>
     )
