@@ -18,15 +18,15 @@ export const HomeContainer = styled.div`
     background-color: ${props => props.theme.backgroundColor};
 `
 
-export const HomeTitle = styled.h1`
+export const HomeTitle = styled.div`
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 5rem;
     color: ${props => props.theme.fontColor};
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    bottom: 50%;
+    transform: translate(0%, 40vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: ${fadeInOutAnimation} 1s ease-in-out;
 `
 
@@ -35,10 +35,9 @@ export const HomeSubTitle = styled.span`
     font-weight: 300;
     font-size: 2.5rem;
     color: ${props => props.theme.buttonColor};
-    margin-left: 35%;
-    position: absolute;
-    left: 15%;
-    transform: translate(-50%, 50%);
-    bottom: 40%;
+    transform: translate(0%, 40vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: ${fadeInOutAnimation} 1s ease-in-out;
 `
