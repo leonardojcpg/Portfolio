@@ -1,4 +1,17 @@
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
+
+const fadeInOutAnimation = keyframes`
+    0% {
+    opacity: 0;
+  }
+    50% {
+    opacity: 0.5;
+  }
+    100% {
+    opacity: 1;
+  }
+`
+
 
 export const HomeContainer = styled.div`
     height: 100vh;
@@ -14,7 +27,7 @@ export const HomeTitle = styled.h1`
     left: 50%;
     transform: translate(-50%, 50%);
     bottom: 50%;
-
+    animation: ${fadeInOutAnimation} 1s ease-in-out;
 `
 
 export const HomeSubTitle = styled.span`
@@ -27,6 +40,5 @@ export const HomeSubTitle = styled.span`
     left: 15%;
     transform: translate(-50%, 50%);
     bottom: 40%;
-
-
+    animation: ${fadeInOutAnimation} 1s ease-in-out;
 `
