@@ -10,8 +10,11 @@ export const HomeTitle = styled.h1`
     font-weight: bold;
     font-size: 5rem;
     color: ${props => props.theme.fontColor};
-    margin-left: 25%;
-    margin-top: 12%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+
 `
 
 export const HomeSubTitle = styled.span`
@@ -20,4 +23,10 @@ export const HomeSubTitle = styled.span`
     font-size: 2.5rem;
     color: ${props => props.theme.buttonColor};
     margin-left: 35%;
+    position: absolute;
+    left: 15%;
+    transform: translate(-50%, 50%);
+    bottom: 40%;
+
+
 `

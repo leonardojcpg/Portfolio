@@ -5,12 +5,12 @@ import {
   HomeSubTitle
 } from "./style.js";
 
-export const Home = () => {
+export const Home = (props) => {
   return (
     <HomeContainer>
       <Header />
-      <HomeTitle>Leonardo Gomes</HomeTitle>
-      <HomeSubTitle>Full Stack Developer</HomeSubTitle>
+      <HomeTitle>{props.name}</HomeTitle>
+      <HomeSubTitle>{props.subtitle}</HomeSubTitle>
     </HomeContainer>
   );
 };

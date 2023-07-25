@@ -7,7 +7,7 @@ export const Header = () => {
     <HeaderContainer>
       <NavLinks>
         <Button
-        href='/'
+          href="/"
           sx={{
             color: "#141414",
             "&:hover": {
@@ -20,7 +20,7 @@ export const Header = () => {
           Home
         </Button>
         <Button
-        href='/about'
+          href="/about"
           sx={{
             color: "#141414",
             "&:hover": {
@@ -33,7 +33,7 @@ export const Header = () => {
           About
         </Button>
         <Button
-        href='/techs'
+          href="/techs"
           sx={{
             color: "#141414",
             "&:hover": {
@@ -46,7 +46,7 @@ export const Header = () => {
           Techs
         </Button>
         <Button
-          href='/projects'
+          href="/projects"
           sx={{
             color: "#141414",
             "&:hover": {
@@ -58,7 +58,7 @@ export const Header = () => {
         >
           Projects
         </Button>
-        <Container sx={{ display: "flex", marginLeft: "80%" }}>
+        <Container sx={{ display: "flex" }}>
           <Button
             variant="outlined"
             sx={{
