@@ -10,6 +10,7 @@ import {
 } from './styles.js'
 
 export const About = (props) => {
+
     return (
         <AboutContainer>
         <Header />

@@ -10,14 +10,16 @@ export const ContainerContent = styled.div`
     position: absolute;
     left: 50%;
     transform: translate(-50%, 50%);
+    justify-content: center;
     bottom: 50%;
     width: 55%;
     height: 40%;
-
+    border: 1px solid red
 `
 
 export const PhotoProfile = styled.div`
     display: flex;
+    margin-top: 1rem;
     width: 40%;
     opacity: 90%;
 `
@@ -62,7 +64,6 @@ export const AboutText = styled.p`
     font-family: "Poppins";
     font-weight: 400;
     font-size: 0.875rem;
-    margin: 0.45rem;
     line-height: 1.6;
     text-align: justify;
     width: 31.25rem;
@@ -71,6 +72,3 @@ export const AboutText = styled.p`
     animation: ${fadeInOutAnimation} 1s ease-in-out;
 
 `
-
-
-
