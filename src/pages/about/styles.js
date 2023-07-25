@@ -7,11 +7,7 @@ export const AboutContainer = styled.div`
 
 export const ContainerContent = styled.div`
     display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    justify-content: center;
-    bottom: 50%;
+    transform: translate(40%, 60%);
     width: 55%;
     height: 40%;
     border: 1px solid red
@@ -21,7 +17,6 @@ export const PhotoProfile = styled.div`
     display: flex;
     margin-top: 1rem;
     width: 40%;
-    opacity: 90%;
 `
 
 export const Image = styled.img`
