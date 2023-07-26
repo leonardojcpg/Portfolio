@@ -1,61 +1,64 @@
+import {
+    TechsContainer,
+    TechCard,
+    TechImg,
+    TechsBackground
+} from "./styles.js"
+
 import {Header} from '../../components/header/index.jsx'
+
+import htmlImg from './assets/html5.png'
+import cssImg from './assets/css.png'
+import javascriptImg from './assets/javascript.png'
+import reactImg from './assets/react.png'
+import typescriptImg from './assets/typescript.png'
+import mySqlImg from './assets/mysql.png'
+import javaImg from './assets/java.png'
 
 export const Techs = () => {
 
     const techs = [
         {
             name: "Html",
-            img: "",
-            description: ""
+            img: htmlImg,
         },
         {
             name: "Css",
-            img: "",
-            description: ""
+            img: cssImg,
         },
         {
             name: "Javascript",
-            img: "",
-            description: ""
+            img: javascriptImg,
         },
         {
             name: "React Js",
-            img: "",
-            description: ""
+            img: reactImg,
         },
         {
             name: "Typescript",
-            img: "",
-            description: ""
-        },
-        {
-            name: "Node Js",
-            img: "",
-            description: ""
+            img: typescriptImg,
         },
         {
             name: "MySQL",
-            img: "",
-            description: ""
+            img: mySqlImg,
         },
         {
             name: "Java",
-            img: "",
-            description: ""
+            img: javaImg,
         }
     ]
 
     
   return (
-    <>
+    <TechsBackground>
         <Header />
+        <TechsContainer>
         {techs.map((tech, index) => (
             <TechCard key={index}>
-            <h3>{tech.name}</h3>
-            <img src={tech.img} alt={tech.name} />
-            <p>{tech.description}</p>
+            <TechImg src={tech.img} height={90} width={90} alt={tech.name} />
             </TechCard>
         ))}
-    </>
+        </TechsContainer>
+    </TechsBackground>
   );
 };

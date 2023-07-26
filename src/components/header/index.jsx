@@ -33,7 +33,7 @@ export const Header = () => {
           About
         </Button>
         <Button
-          href="/projects"
+          href="/techs"
           sx={{
             color: "#141414",
             "&:hover": {

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "../pages/home";
 import { About } from "../pages/about";
-import {Techs} from "../pages/techs"
+import { Techs } from "../pages/techs";
 
 export const RouteApp = () => {
   return (
@@ -26,7 +26,7 @@ export const RouteApp = () => {
               />
             }
           />
-          <Route path="/techs" element= {<Techs />}/>
+          <Route path="/techs" element={<Techs />} />
         </Routes>
       </Router>
     </>

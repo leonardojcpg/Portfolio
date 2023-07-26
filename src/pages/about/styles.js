@@ -10,7 +10,6 @@ export const ContainerContent = styled.div`
     transform: translate(40%, 60%);
     width: 55%;
     height: 40%;
-    border: 1px solid red
 `
 
 export const PhotoProfile = styled.div`
@@ -25,6 +24,7 @@ export const Image = styled.img`
 `
 
 export const AboutTextH1 = styled.h1`
+    margin: 0.5rem;
     font-family: "Poppins";
     font-size: 3rem;
     line-height: 1.6;
