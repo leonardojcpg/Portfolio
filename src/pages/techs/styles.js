@@ -14,6 +14,7 @@ const fadeInOutAnimation = keyframes`
 
 export const TechsBackground = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
+  height: 100vh;
 `;
 
 export const TechsContainer = styled.div`
