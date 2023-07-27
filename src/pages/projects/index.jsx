@@ -1,35 +1,38 @@
+import { useEffect, useState } from "react";
 import { Header } from "../../components/header/index.jsx";
 import {
   ProjectsPageBackground,
   ProjectsContainer,
-  ProjectsTitle,
   ProjectsCards,
-  ProjectsCreatedAt
+  ProjectsTitle,
+  ProjectsCreatedAt,
+  ProjectsLink
 } from "./styles.js";
-import api from "../../services/api.js";
-import { useEffect, useState } from "react";
 
 export const Projects = () => {
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
-    fetch(api)
+    fetch('https://api.github.com/users/leonardojcpg/repos')
       .then((response) => response.json())
-      .then((data) => setRepositories(data));
+      .then((data) => {
+        const sortedRepositories = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+        setRepositories(sortedRepositories)
+      })
+      .catch((error) => console.log(error));
   }, []);
 
   return (
     <ProjectsPageBackground>
       <Header />
       <ProjectsContainer>
-        {repositories.map((repo) => {
-          return (
-            <ProjectsCards>
-              <ProjectsTitle>{repo.name}</ProjectsTitle>
-              <ProjectsCreatedAt>{repo.created_at}</ProjectsCreatedAt>
-            </ProjectsCards>
-          );
-        })}
+        {repositories.map((repo) => (
+          <ProjectsCards key={repo.id}>
+            <ProjectsTitle>{repo.name}</ProjectsTitle>
+            <ProjectsCreatedAt>{repo.created_at}</ProjectsCreatedAt>
+            <ProjectsLink href={repo.html_url}>Visit repositorie here!</ProjectsLink>
+          </ProjectsCards>
+        ))}
       </ProjectsContainer>
     </ProjectsPageBackground>
   );
