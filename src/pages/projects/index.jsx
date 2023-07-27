@@ -24,6 +24,11 @@ export const Projects = (props) => {
       .catch((error) => console.log(error));
   }, []);
 
+  function formatDate(dateString){
+    const date = new Date(dateString)
+    return date.toLocaleDateString()
+  }
+
   return (
     <ProjectsPageBackground>
       <Header />
@@ -31,7 +36,7 @@ export const Projects = (props) => {
         {repositories.map((repo) => (
           <ProjectsCards key={repo.id}>
             <ProjectsTitle>{repo.name}</ProjectsTitle>
-            <ProjectsCreatedAt>{repo.created_at}</ProjectsCreatedAt>
+            <ProjectsCreatedAt>{formatDate(repo.created_at)}</ProjectsCreatedAt>
             <ProjectsLink href={repo.html_url}>
               {props.cardsLink}
             </ProjectsLink>
