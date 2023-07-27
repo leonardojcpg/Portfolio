@@ -28,7 +28,7 @@ export const RouteApp = () => {
             }
           />
           <Route path="/techs" element={<Techs />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projects cardsLink="Visit repository here!"/>} />
         </Routes>
       </Router>
     </>

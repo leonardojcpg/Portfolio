@@ -38,6 +38,10 @@ export const ProjectsCards = styled.div`
   align-items: center;
   justify-content: center;
   height: 9.375rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const ProjectsTitle = styled.h3`
