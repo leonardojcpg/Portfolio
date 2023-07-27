@@ -7,6 +7,7 @@ import {
   ProjectsTitle,
   ProjectsCreatedAt,
   ProjectsLink,
+  ProjectLanguage
 } from "./styles.js";
 
 export const Projects = (props) => {
@@ -37,6 +38,7 @@ export const Projects = (props) => {
           <ProjectsCards key={repo.id}>
             <ProjectsTitle>{repo.name}</ProjectsTitle>
             <ProjectsCreatedAt>{formatDate(repo.created_at)}</ProjectsCreatedAt>
+            <ProjectLanguage>Used tech: {repo.language}</ProjectLanguage>
             <ProjectsLink href={repo.html_url}>
               {props.cardsLink}
             </ProjectsLink>
