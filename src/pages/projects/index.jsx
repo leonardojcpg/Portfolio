@@ -7,7 +7,7 @@ import {
   ProjectsTitle,
   ProjectsCreatedAt,
   ProjectsLink,
-  ProjectLanguage
+  ProjectLanguage,
 } from "./styles.js";
 
 export const Projects = (props) => {
@@ -25,9 +25,9 @@ export const Projects = (props) => {
       .catch((error) => console.log(error));
   }, []);
 
-  function formatDate(dateString){
-    const date = new Date(dateString)
-    return date.toLocaleDateString()
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString();
   }
 
   return (
@@ -39,9 +39,7 @@ export const Projects = (props) => {
             <ProjectsTitle>{repo.name}</ProjectsTitle>
             <ProjectsCreatedAt>{formatDate(repo.created_at)}</ProjectsCreatedAt>
             <ProjectLanguage>Used tech: {repo.language}</ProjectLanguage>
-            <ProjectsLink href={repo.html_url}>
-              {props.cardsLink}
-            </ProjectsLink>
+            <ProjectsLink href={repo.html_url}>{props.cardsLink}</ProjectsLink>
           </ProjectsCards>
         ))}
       </ProjectsContainer>

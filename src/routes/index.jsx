@@ -3,6 +3,7 @@ import { Home } from "../pages/home";
 import { About } from "../pages/about";
 import { Techs } from "../pages/techs";
 import { Projects } from "../pages/projects";
+import { Contact } from "../pages/contact";
 
 export const RouteApp = () => {
   return (
@@ -28,7 +29,19 @@ export const RouteApp = () => {
             }
           />
           <Route path="/techs" element={<Techs />} />
-          <Route path="/projects" element={<Projects cardsLink="Visit repository here!"/>} />
+          <Route
+            path="/projects"
+            element={<Projects cardsLink="Visit repository here!" />}
+          />
+          <Route
+            path="/contact"
+            element={
+              <Contact
+                title="Contact."
+                subtitle="Get in touch with me via social media or email."
+              />
+            }
+          />
         </Routes>
       </Router>
     </>

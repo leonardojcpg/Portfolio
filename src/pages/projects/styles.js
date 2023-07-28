@@ -46,7 +46,7 @@ export const ProjectsCards = styled.div`
 
 export const ProjectsTitle = styled.h3`
   font-size: 1.125rem;
-  color: ${props => props.theme.fontColor};
+  color: ${(props) => props.theme.fontColor};
   font-family: "Poppins";
   margin-bottom: 0.625rem;
 `;
@@ -54,15 +54,13 @@ export const ProjectsTitle = styled.h3`
 export const ProjectsCreatedAt = styled.p`
   font-family: "Poppins";
   margin-bottom: 0.625rem;
-  `;
-
+`;
 
 export const ProjectsLink = styled.a`
-    font-family: "Poppins";
+  font-family: "Poppins";
   margin-bottom: 0.625rem;
-`
+`;
 
 export const ProjectLanguage = styled.h5`
-    font-family: "Poppins";
-
-`
+  font-family: "Poppins";
+`;

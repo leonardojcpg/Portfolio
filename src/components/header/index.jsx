@@ -61,6 +61,7 @@ export const Header = () => {
         <Container sx={{ display: "flex" }}>
           <Button
             variant="outlined"
+            href="/contact"
             sx={{
               backgroundColor: "#5d740c",
               color: "#dfdeda",
