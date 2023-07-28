@@ -19,7 +19,7 @@ export const HomeContainer = styled.div`
 `
 
 export const HomeTitle = styled.div`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: 5rem;
     color: ${props => props.theme.fontColor};
@@ -31,7 +31,7 @@ export const HomeTitle = styled.div`
 `
 
 export const HomeSubTitle = styled.span`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: 300;
     font-size: 2.5rem;
     color: ${props => props.theme.buttonColor};

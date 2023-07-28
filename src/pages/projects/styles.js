@@ -14,6 +14,7 @@ const fadeInOutAnimation = keyframes`
 
 export const ProjectsPageBackground = styled.div`
   background-color: ${(props) => props.theme.backgroundColor};
+  height: 100vh;
 `;
 
 export const ProjectsContainer = styled.div`
@@ -37,8 +38,7 @@ export const ProjectsCards = styled.div`
   align-items: center;
   justify-content: center;
   height: 9.375rem;
-  flex-wrap: wrap;
-
+  text-align: center;
   &:hover {
     transform: scale(1.05);
   }
@@ -47,20 +47,17 @@ export const ProjectsCards = styled.div`
 export const ProjectsTitle = styled.h3`
   font-size: 1.125rem;
   color: ${(props) => props.theme.fontColor};
-  font-family: "Poppins";
   margin-bottom: 0.625rem;
 `;
 
 export const ProjectsCreatedAt = styled.p`
-  font-family: "Poppins";
   margin-bottom: 0.625rem;
 `;
 
 export const ProjectsLink = styled.a`
-  font-family: "Poppins";
   margin-bottom: 0.625rem;
+  text-decoration: none;
 `;
 
 export const ProjectLanguage = styled.h5`
-  font-family: "Poppins";
 `;

@@ -10,7 +10,9 @@ function App() {
     'fontColor': '#141414',
     'backgroundColor': '#dfdeda',
     'buttonColor': '#5d740c', 
-    'buttonHover': '#d4a15f'
+    'buttonHover': '#d4a15f', 
+
+    'primaryFont': 'Poppins'
   }
 
   return (
