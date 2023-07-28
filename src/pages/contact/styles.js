@@ -19,7 +19,6 @@ export const ContactBackground = styled.div`
 
 export const ContactContainer = styled.div`
     animation: ${fadeInOutAnimation} 1s ease-in-out;
-    border: 1px solid black;
     height: 75%;
     width: 80%;
     transform: translate(20vh, 20vh);
@@ -29,16 +28,43 @@ export const ContactContainer = styled.div`
 export const ContactTitle = styled.h1`
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1.6;
   color: #141414;   
 `
 
 export const ContactSubtitle = styled.h3`
     font-family: "Poppins";
+    font-weight: 300;
     width: 18.75rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     color: #141414;
-    font-size: 1.125rem;
+`
+
+export const ContactIcons = styled.div`
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem;
+`
+
+export const ContactIconLogo = styled.img`
+    border-radius: 0.5rem;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+`
+
+export const ContactLogoLink = styled.a`
+    font-family: "Poppins";
+    font-weight: 300;
+    color: #141414;
+    text-decoration: none;
+    margin-top: 0.2rem;   
+
+    &:hover{
+        transform: scale(1.1);
+        color: ${props => props.theme.buttonColor};
+    }
 `
