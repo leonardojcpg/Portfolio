@@ -30,7 +30,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsCards = styled.div`
   margin: 1rem;
-  background-color: #ffffff;
+  background-color: #d3d3d3;
   border-radius: 0.5rem;
   padding: 0.625rem;
   display: flex;
@@ -60,4 +60,6 @@ export const ProjectsLink = styled.a`
 `;
 
 export const ProjectLanguage = styled.h5`
+  color: ${(props) => props.theme.fontColor};
+
 `;

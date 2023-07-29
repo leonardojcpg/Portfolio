@@ -1,30 +1,19 @@
-import { Header } from "../../components/Header"
-import {
-    AboutContainer, 
-    ContainerContent,
-    PhotoProfile, 
-    AboutText, 
-    AboutTextH1, 
-    AboutTextH3, 
-    Image
-} from './styles.js'
+import { AboutImg } from "../../components/AboutImg";
+import { AboutTexts } from "../../components/AboutTexts";
+import { Header } from "../../components/Header";
+import { AboutContainer } from "./styles.js";
 
-export const About = (props) => {
-
-    return (
-        <AboutContainer>
-        <Header />
-        <ContainerContent>
-            <PhotoProfile>
-                <Image src="https://github.com/leonardojcpg.png" alt="" />
-            </PhotoProfile>
-            <AboutText>
-                <AboutTextH1>{props.aboutTextH1}</AboutTextH1>
-                <AboutTextH3>{props.aboutTextH3}</AboutTextH3>
-                <p>{props.pText1}</p><br></br>
-                <p>{props.pText2}</p>
-            </AboutText>
-        </ContainerContent>
-        </AboutContainer>
-    )
-}
+export const About = () => {
+  return (
+    <AboutContainer>
+      <Header />
+      <AboutImg />
+      <AboutTexts
+        title="About."
+        subtitle="I'm a Full Stack Developer based in cloudy São Paulo, Brazil."
+        firstParagraph="A lover for technology and in a constant quest for new challenges. My journey in web development began with HTML, CSS, and JavaScript, and since then, I have been honing my skills and knowledge in various technologies"
+        secondParagraph="Since 2022, I've enjoyed turning complex problems into simple solutions."
+      />
+    </AboutContainer>
+  );
+};

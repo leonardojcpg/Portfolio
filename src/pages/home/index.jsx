@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header";
-import { HomeText } from "../../components/HomeTitle";
+import { HomeText } from "../../components/HomeTitle/index.jsx";
 
 export const Home = () => {
     return (
