@@ -5,7 +5,7 @@ import {
     TechsBackground
 } from "./styles.js"
 
-import {Header} from '../../components/header/index.jsx'
+import {Header} from '../../components/Header/index.jsx'
 
 import htmlImg from './assets/html5.png'
 import cssImg from './assets/css.png'

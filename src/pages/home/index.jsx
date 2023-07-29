@@ -1,16 +1,11 @@
-import { Header } from "../../components/header/index.jsx";
-import { 
-  HomeContainer,
-  HomeTitle,
-  HomeSubTitle
-} from "./style.js";
+import { Header } from "../../components/Header";
+import { HomeText } from "../../components/HomeTitle";
 
-export const Home = (props) => {
-  return (
-    <HomeContainer>
-      <Header />
-      <HomeTitle>{props.name}</HomeTitle>
-      <HomeSubTitle>{props.subtitle}</HomeSubTitle>
-    </HomeContainer>
-  );
-};
+export const Home = () => {
+    return (
+        <>
+        <Header />
+        <HomeText title="Leonardo Gomes" subtitle="Full Stack Developer"/>
+        </>
+    )
+}

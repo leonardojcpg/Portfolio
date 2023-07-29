@@ -10,38 +10,17 @@ export const RouteApp = () => {
     <>
       <Router>
         <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <Home name="Leonardo Gomes" subtitle="Full Stack Developer" />
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <About
-                aboutTextH1="About."
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About  aboutTextH1="About."
                 aboutTextH3="I'm a Full Stack Developer based in cloudy São Paulo, Brazil."
                 pText1="A lover for technology and in a constant quest for new challenges. My journey in web development began with HTML, CSS, and JavaScript, and since then, I have been honing my skills and knowledge in various technologies"
-                pText2="Since 2022, I've enjoyed turning complex problems into simple solutions."
-              />
-            }
-          />
-          <Route path="/techs" element={<Techs />} />
-          <Route
-            path="/projects"
-            element={<Projects cardsLink="Visit repository here!" />}
-          />
-          <Route
-            path="/contact"
-            element={
-              <Contact
+                pText2="Since 2022, I've enjoyed turning complex problems into simple solutions." />} />
+          <Route path="/techs" element={<Techs cardsLink="Visit repository here!"
+/>} />
+          <Route path="/projects" element={<Projects 
                 title="Contact."
-                subtitle="Get in touch with me via social media or email."
-              />
-            }
-          />
+                subtitle="Get in touch with me via social media or email."/>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </>

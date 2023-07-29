@@ -1,4 +1,4 @@
-import { Header } from "../../components/header/index.jsx";
+import { Header } from "../../components/Header/index.jsx";
 import {
   ContactBackground,
   ContactContainer,
