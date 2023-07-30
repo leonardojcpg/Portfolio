@@ -5,8 +5,7 @@ import {
   ContactTitle,
   ContactSubtitle,
   ContactIcons,
-  ContactIconLogo,
-  ContactLogoLink,
+  ContactIconLogo
 } from "./styles.js";
 import linkedinLogo from "./assets/linkedinLogo.png";
 import intagramLogo from "./assets/instagramLogo.png";
@@ -26,20 +25,39 @@ export const Contact = () => {
         </ContactSubtitle>
         <ContactIcons>
           <ContactIconLogo src={linkedinLogo} alt="" height={30} width={30} />
-          <ContactLogoLink href={linkedinUrl} target="_blank">
+          <Button
+            href={linkedinUrl}
+            target="_blank"
+            sx={{
+              color: "#141414",
+              "&:hover": {
+                color: "#5d740c",
+              },
+            }}
+          >
             Linkedin
-          </ContactLogoLink>
+          </Button>
         </ContactIcons>
         <ContactIcons>
           <ContactIconLogo src={intagramLogo} alt="" height={30} width={30} />
-          <ContactLogoLink href={instagramUrl} target="_blank">
-            Instgram
-          </ContactLogoLink>
+          <Button
+            href={instagramUrl}
+            target="_blank"
+            sx={{
+              color: "#141414",
+              "&:hover": {
+                color: "#5d740c",
+              },
+            }}
+          >
+            Instagram
+          </Button>
         </ContactIcons>
         <Button
           href={`mailto:leonardojpinheirogomes@gmail.com`}
           sx={{
             width: "18.75rem",
+            marginTop: "2rem",
             color: "#141414",
             backgroundColor: "#dfdeda",
             "&:hover": {
