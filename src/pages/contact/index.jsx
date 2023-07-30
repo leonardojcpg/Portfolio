@@ -6,12 +6,13 @@ import {
   ContactSubtitle,
   ContactIcons,
   ContactIconLogo,
-  ContactLogoLink
+  ContactLogoLink,
 } from "./styles.js";
 import linkedinLogo from "./assets/linkedinLogo.png";
 import intagramLogo from "./assets/instagramLogo.png";
+import Button from "@mui/material/Button";
 
-export const Contact = (props) => {
+export const Contact = () => {
   const linkedinUrl = "https://www.linkedin.com/in/leonardo-gomes-a429a5198/";
   const instagramUrl = "https://www.instagram.com/leonardogomes/";
 
@@ -19,8 +20,10 @@ export const Contact = (props) => {
     <ContactBackground>
       <Header />
       <ContactContainer>
-        <ContactTitle>{props.title}</ContactTitle>
-        <ContactSubtitle>{props.subtitle}</ContactSubtitle>
+        <ContactTitle>Contact.</ContactTitle>
+        <ContactSubtitle>
+          Get in touch with me via social media or email.
+        </ContactSubtitle>
         <ContactIcons>
           <ContactIconLogo src={linkedinLogo} alt="" height={30} width={30} />
           <ContactLogoLink href={linkedinUrl} target="_blank">
@@ -33,7 +36,21 @@ export const Contact = (props) => {
             Instgram
           </ContactLogoLink>
         </ContactIcons>
-        <div className="buttonContactMe"></div>
+        <Button
+          href={`mailto:leonardojpinheirogomes@gmail.com`}
+          sx={{
+            width: "18.75rem",
+            color: "#141414",
+            backgroundColor: "#dfdeda",
+            "&:hover": {
+              backgroundColor: "#5d740c",
+              borderColor: "#5d740c",
+              color: "#dfdeda",
+            },
+          }}
+        >
+          Email me
+        </Button>
       </ContactContainer>
     </ContactBackground>
   );

@@ -14,8 +14,7 @@ export const Header = () => {
               backgroundColor: "#dfdeda",
               borderColor: "#5d740c",
               color: "#5d740c",
-            },
-          }}
+            },}}
         >
           Home
         </Button>
