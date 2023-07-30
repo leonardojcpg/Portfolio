@@ -13,6 +13,7 @@ const fadeInOutAnimation = keyframes`
 `;
 
 export const ProjectsPageBackground = styled.div`
+  animation: ${fadeInOutAnimation} 1s ease-in-out;
   background-color: ${(props) => props.theme.backgroundColor};
   height: 100vh;
 `;

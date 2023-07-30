@@ -1,6 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeInOutAnimation = keyframes`
+    0% {
+    opacity: 0;
+  }
+    50% {
+    opacity: 0.5;
+  }
+    100% {
+    opacity: 1;
+  }
+`;
+
 
 export const ContainerContent = styled.div`
+  animation: ${fadeInOutAnimation} 1s ease-in-out;
   width: 55%;
   margin-top: 12rem;
 `;

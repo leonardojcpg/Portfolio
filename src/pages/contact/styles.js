@@ -20,14 +20,14 @@ export const ContactBackground = styled.div`
 export const ContactContainer = styled.div`
   animation: ${fadeInOutAnimation} 1s ease-in-out;
   height: 75%;
-  width: 80%;
-  transform: translate(20vh, 20vh);
+  width: 20%;
+  transform: translate(85vh, 20vh);
 `;
 
 export const ContactTitle = styled.h1`
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.6;
   color: #141414;
 `;
