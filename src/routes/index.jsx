@@ -13,16 +13,7 @@ export const RouteApp = () => {
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/techs" element={<Techs />} />
-          <Route
-            path="/projects"
-            element={
-              <Projects
-                title="Contact."
-                subtitle="Get in touch with me via social media or email."
-                cardsLink="Visit repository here!"
-              />
-            }
-          />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

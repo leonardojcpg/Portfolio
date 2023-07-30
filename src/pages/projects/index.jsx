@@ -10,7 +10,7 @@ import {
   ProjectLanguage,
 } from "./styles.js";
 
-export const Projects = (props) => {
+export const Projects = () => {
   const [repositories, setRepositories] = useState([]);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export const Projects = (props) => {
     const date = new Date(dateString);
     return date.toLocaleDateString();
   }
-
+  
   return (
     <ProjectsPageBackground>
       <Header />
@@ -39,7 +39,7 @@ export const Projects = (props) => {
             <ProjectsTitle>{repo.name}</ProjectsTitle>
             <ProjectsCreatedAt>{formatDate(repo.created_at)}</ProjectsCreatedAt>
             <ProjectLanguage>Used tech: {repo.language}</ProjectLanguage>
-            <ProjectsLink href={repo.html_url}>{props.cardsLink}</ProjectsLink>
+            <ProjectsLink href={repo.html_url}>Visit repository here!</ProjectsLink>
           </ProjectsCards>
         ))}
       </ProjectsContainer>
